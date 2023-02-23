@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No tests defined.\" && exit 1",
     "start": "node app.js",
     "devstart": "DEBUG=myapp:* & nodemon app.js"
   },
