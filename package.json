@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "An upcoming web-app that identifies the language from a given text.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
