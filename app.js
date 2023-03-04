@@ -11,6 +11,8 @@ const __dirname = path.dirname(__filename);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
+app.use(express.static('semantic/dist'));
 
 // Base route
 app.get("/", (req, res) => {
