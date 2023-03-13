@@ -54,6 +54,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	text-align: left;
 }
 
 .title {
@@ -66,5 +67,34 @@ html {
 .title span {
 	color: #ff0000;
 	font-weight: bold;
+}
+
+.prompt {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+.result p:nth-child(1) {
+	padding: 2rem;
+	font-size: 2rem;
+}
+
+.result span {
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.result p:nth-child(2) {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.result div {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 

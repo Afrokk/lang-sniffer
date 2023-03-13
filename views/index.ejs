@@ -1,16 +1,33 @@
 <%- include('header.ejs') %>
-  <body>
-    <div class="wrapper">
-      <h1 class="title">Welcome to <span>LangSniffer</span></h1>
-      <p class="prompt">Please enter a phrase from any language:</p>
-      <form class="input" action="/" method="POST">
-        <textarea name="phrase" id="phrase"></textarea>
-        <input type="submit" value="Submit" />
-      </form>
-      <p class="result">
-        <% if (langName) { %> The language of your phrase is <%= langName %>. <% }
-        %>
-      </p>
+
+<body>
+  <div class="wrapper">
+    <h1 class="title">Welcome to <span>LangSniffer</span></h1>
+    <div class="prompt">
+      <p>Please enter a phrase from any language</p>
     </div>
-  </body>
+    <form class="input" action="/" method="POST">
+      <div class="ui icon huge input">
+        <textarea name="phrase" id="phrase" placeholder="Enter a phrase..." cols="30" rows="1"></textarea>
+        <button class="huge ui button" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+    <div class="result">
+      <% if (langName === "und") { %> <p>The language of your phrase is <span>not found</span>.</p>
+        <p> Entering a longer phrase helps! </p>
+        <div>
+          <button class="huge ui button" onClick="window.location.href=window.location.href"> Refresh </button>
+        </div> 
+        <% } 
+    else if (langName) { %> <p>The language of your phrase is <span><%= langName %></span>.</p>
+    <div>
+      <button class="huge ui button" onClick="window.location.href=window.location.href"> Refresh </button>
+    </div> 
+    <% } %>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -23,17 +23,15 @@ app.post("/", (req, res) => {
   const langCode = franc(req.body.phrase);
   if (langCode === "und") {
     res.render("index", {
-      langName:
-        " not found. Please make sure the input is longer or try a different phrase",
+      langName: "und",
     });
   } else {
     try {
       const langName = langs.where("3", langCode).name;
       res.render("index", { langName });
-    } catch (err) {
+    } catch {
       res.render("index", {
-        langName:
-          " not found. Please make sure the input is longer or try a different phrase",
+        langName: "und",
       });
     }
   }
