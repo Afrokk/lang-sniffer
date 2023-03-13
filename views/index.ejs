@@ -1,14 +1,16 @@
 <%- include('header.ejs') %>
   <body>
-    <h1>Welcome to LangSniffer</h1>
-    <p>Please enter a phrase from any language:</p>
-    <form action="/" method="POST">
-      <textarea name="phrase" id="phrase"></textarea>
-      <input type="submit" value="Submit" />
-    </form>
-    <p>
-      <% if (langName) { %> The language of your phrase is <%= langName %>. <% }
-      %>
-    </p>
+    <div class="wrapper">
+      <h1 class="title">Welcome to <span>LangSniffer</span></h1>
+      <p class="prompt">Please enter a phrase from any language:</p>
+      <form class="input" action="/" method="POST">
+        <textarea name="phrase" id="phrase"></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+      <p class="result">
+        <% if (langName) { %> The language of your phrase is <%= langName %>. <% }
+        %>
+      </p>
+    </div>
   </body>
 </html>
