@@ -18,12 +18,18 @@
       <% if (langName === "und") { %> <p>The language of your phrase is <span>not found</span>.</p>
         <p> Entering a longer phrase helps! </p>
         <div>
-          <button class="huge ui button" onClick="window.location.href=window.location.href"> Refresh </button>
+          <button class="ui icon button" onClick="window.location.href=window.location.href">
+            Reload
+            <i class="redo alternate icon" onClick="window.location.href=window.location.href" style="visibility: visible;"></i>
+          </button>
         </div> 
         <% } 
     else if (langName) { %> <p>The language of your phrase is <span><%= langName %></span>.</p>
     <div>
-      <button class="huge ui button" onClick="window.location.href=window.location.href"> Refresh </button>
+      <button class="ui icon button" onClick="window.location.href=window.location.href">
+        Reload
+        <i class="redo alternate icon" onClick="window.location.href=window.location.href" style="visibility: visible;"></i>
+      </button>
     </div> 
     <% } %>
     </div>

@@ -76,7 +76,8 @@ html {
 }
 
 .result p:nth-child(1) {
-	padding: 2rem;
+	padding-top: 2rem;
+	margin-bottom: 1rem;
 	font-size: 2rem;
 }
 
@@ -96,5 +97,9 @@ html {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.result i {
+	cursor: pointer;
 }
 
