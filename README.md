@@ -30,7 +30,7 @@ LangSniffer is a powerful web application that can detect the language of any gi
     <img src="images/phrase.png">
   </p>
   <p align="center">
-    <img src="images/result.png">
+    <img src="images/results.png">
   </p>
     <p align="center">
     <img src="images/error.png">
